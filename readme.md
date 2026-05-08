@@ -28,3 +28,10 @@ kubectl apply -f clusters/dev/flux-kustomization.yaml
 4. helmrelease.yaml                          
     4.1 == Airflow Helm chart installed
 
+## Upgrade 
+If the helmrelease.yaml file is changed, the chart will be upgraded. This can be monitoring the status of the HelmRelease resource.
+```
+kubectl get helmreleases -A
+```
+
+kubectl logs airflow-api-server-7b485c598-zpflm -c wait-for-airflow-migrations -n airflow-dev

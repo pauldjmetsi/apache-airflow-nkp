@@ -17,6 +17,7 @@ spec:
 
   values:
     executor: KubernetesExecutor
+    webserverSecretKey: "dev-temporary-secret-key"
 
     webserver:
       service:
