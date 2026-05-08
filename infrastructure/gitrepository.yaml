@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: apache-airflow-nkp
+  namespace: kommander-flux
+spec:
+  interval: 1m
+  url: https://github.com/pauldjmetsi/apache-airflow-nkp.git
+  ref:
+    branch: main
