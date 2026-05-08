@@ -5,6 +5,9 @@ This is a simple example of how to setup Apache Airflow using Helm and Flux.
 ## Steps 
 
 1. Pull the repository down to you machine where you run kubectl commands
+```
+git clone https://github.com/pauldjmetsi/apache-airflow-nkp.git
+```
 2. Run the following command to install the helm repositories and git repositories
 ```
 kubectl apply -k infrastructure/
